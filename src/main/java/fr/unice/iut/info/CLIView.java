@@ -4,17 +4,15 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-/*.........................................................
- . Copyright (c)                                          .
- .                                                        .
- . Code créé par :                                        .
- . -> Alexandre BOLOT                                     .
- . -> Victor MONSCH                                       .
- . -> Christopher SABOYA                                  .
- . -> Laurent MICHELET                                    .
- .                                                        .
- . Dernière modification le : 10/02/17 14:03              .
- .........................................................*/
+/*................................................................................................................................
+ . Copyright (c)
+ .
+ . The CLIView	 Class was Coded by : Alexandre BOLOT
+ .
+ . Last Modified : 11/04/17 23:23
+ .
+ . Contact : bolotalex06@gmail.com
+ ...............................................................................................................................*/
 
 /**
  Classe de Code Behind de CLI

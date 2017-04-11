@@ -4,17 +4,15 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Observable;
 
-/*.........................................................
- . Copyright (c)                                          .
- .                                                        .
- . Code créé par :                                        .
- . -> Alexandre BOLOT                                     .
- . -> Victor MONSCH                                       .
- . -> Christopher SABOYA                                  .
- . -> Laurent MICHELET                                    .
- .                                                        .
- . Dernière modification le : 10/02/17 14:03              .
- .........................................................*/
+/*................................................................................................................................
+ . Copyright (c)
+ .
+ . The Message	 Class was Coded by : Alexandre BOLOT
+ .
+ . Last Modified : 11/04/17 23:23
+ .
+ . Contact : bolotalex06@gmail.com
+ ...............................................................................................................................*/
 
 /**
  Classe qui définit la Box.
