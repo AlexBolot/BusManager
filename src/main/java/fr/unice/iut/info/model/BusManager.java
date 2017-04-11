@@ -1,4 +1,6 @@
-package fr.unice.iut.info;
+package fr.unice.iut.info.model;
+
+import fr.unice.iut.info.service.SerializationClass;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ import java.util.Observable;
  .
  . The BusManager	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:23
+ . Last Modified : 11/04/17 23:27
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/

@@ -1,5 +1,6 @@
 package fr.unice.iut.info;
 
+import fr.unice.iut.info.model.Message;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import java.util.Date;
  .
  . The MessageTest	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:23
+ . Last Modified : 11/04/17 23:27
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/

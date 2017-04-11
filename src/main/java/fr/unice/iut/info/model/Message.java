@@ -1,4 +1,4 @@
-package fr.unice.iut.info;
+package fr.unice.iut.info.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -9,7 +9,7 @@ import java.util.Observable;
  .
  . The Message	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:23
+ . Last Modified : 11/04/17 23:27
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/

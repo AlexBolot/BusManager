@@ -1,5 +1,7 @@
-package fr.unice.iut.info;
+package fr.unice.iut.info.controller;
 
+import fr.unice.iut.info.model.BusManager;
+import fr.unice.iut.info.service.Const;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -22,7 +24,7 @@ import java.util.Observer;
  .
  . The GUIView	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:23
+ . Last Modified : 11/04/17 23:30
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -78,9 +80,6 @@ public class GUIView implements Observer
     
     private Controller controller = new Controller();
     private Timeline   timeline   = new Timeline();
-    
-    private String Red   = "#d9534f";
-    private String Green = "#5cb85c";
     
     private int selectedAction = 0;
     
@@ -212,7 +211,7 @@ public class GUIView implements Observer
                 
                 if(busName.isEmpty())
                 {
-                    showFeedBack("Vous devez saisir un nom valide", Red);
+                    showFeedBack("Vous devez saisir un nom valide", Const.Red);
                 }
                 else
                 {
@@ -222,11 +221,11 @@ public class GUIView implements Observer
                     
                     if(reussi)
                     {
-                        showFeedBack("Bus " + busName + " créé", Green);
+                        showFeedBack("Bus " + busName + " créé", Const.Green);
                     }
                     else
                     {
-                        showFeedBack("Erreur le bus " + busName + " existe déjà", Red);
+                        showFeedBack("Erreur le bus " + busName + " existe déjà", Const.Red);
                     }
                 }
                 break;
@@ -239,7 +238,7 @@ public class GUIView implements Observer
                 
                 if(busName.isEmpty() || boxName.isEmpty())
                 {
-                    showFeedBack("Vous devez saisir un nom valide", Red);
+                    showFeedBack("Vous devez saisir un nom valide", Const.Red);
                 }
                 else
                 {
@@ -252,16 +251,16 @@ public class GUIView implements Observer
                         
                         if(reussi)
                         {
-                            showFeedBack("Boite " + boxName + " créé dans " + busName, Green);
+                            showFeedBack("Boite " + boxName + " créé dans " + busName, Const.Green);
                         }
                         else
                         {
-                            showFeedBack("Erreur la boite " + boxName + " existe déjà dans " + busName, Red);
+                            showFeedBack("Erreur la boite " + boxName + " existe déjà dans " + busName, Const.Red);
                         }
                     }
                     else
                     {
-                        showFeedBack("Bus " + busName + " n'existe pas", Red);
+                        showFeedBack("Bus " + busName + " n'existe pas", Const.Red);
                     }
                 }
                 break;
@@ -275,7 +274,7 @@ public class GUIView implements Observer
                 //region busName is empty
                 if(busName.isEmpty())
                 {
-                    showFeedBack("Vous devez saisir un nom valide", Red);
+                    showFeedBack("Vous devez saisir un nom valide", Const.Red);
                     break;
                 }
                 //endregion
@@ -296,7 +295,7 @@ public class GUIView implements Observer
                     //region boxName is empty
                     if(boxName.isEmpty())
                     {
-                        showFeedBack("Vous devez saisir un nom valide", Red);
+                        showFeedBack("Vous devez saisir un nom valide", Const.Red);
                         break;
                     }
                     //endregion
@@ -318,13 +317,13 @@ public class GUIView implements Observer
                         break;
                     }
                     //endregion
-                    
-                    showFeedBack("Boite " + boxName + " n'existe pas sur le bus " + busName, Red);
+    
+                    showFeedBack("Boite " + boxName + " n'existe pas sur le bus " + busName, Const.Red);
                     break;
                 }
                 //endregion
-                
-                showFeedBack("Bus " + busName + " n'existe pas", Red);
+    
+                showFeedBack("Bus " + busName + " n'existe pas", Const.Red);
                 break;
             //endregion
             
@@ -337,7 +336,7 @@ public class GUIView implements Observer
                 //region messageContent is empty
                 if(messageContent.isEmpty())
                 {
-                    showFeedBack("Vous devez saisir un Message", Red);
+                    showFeedBack("Vous devez saisir un Message", Const.Red);
                     break;
                 }
                 //endregion
@@ -345,7 +344,7 @@ public class GUIView implements Observer
                 //region busName is empty
                 if(busName.isEmpty())
                 {
-                    showFeedBack("Vous devez saisir un nom de Bus", Red);
+                    showFeedBack("Vous devez saisir un nom de Bus", Const.Red);
                     break;
                 }
                 //endregion
@@ -367,21 +366,21 @@ public class GUIView implements Observer
                         
                         if(boxName.isEmpty())
                         {
-                            showFeedBack("Message posté dans default de " + busName, Green);
+                            showFeedBack("Message posté dans default de " + busName, Const.Green);
                             break;
                         }
-                        showFeedBack("Message posté dans " + boxName + " de " + busName, Green);
+                        showFeedBack("Message posté dans " + boxName + " de " + busName, Const.Green);
                         break;
                         
                     }
                     //endregion
-                    
-                    showFeedBack("Erreur la boite " + boxName + " n'éxiste pas dans " + busName, Red);
+    
+                    showFeedBack("Erreur la boite " + boxName + " n'éxiste pas dans " + busName, Const.Red);
                     break;
                 }
                 //endregion
-                
-                showFeedBack("Bus " + busName + " n'existe pas", Red);
+    
+                showFeedBack("Bus " + busName + " n'existe pas", Const.Red);
                 break;
             //endregion
             

@@ -1,5 +1,6 @@
 package fr.unice.iut.info;
 
+import fr.unice.iut.info.model.Bus;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ import static org.junit.Assert.*;
  .
  . The BusTest	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:23
+ . Last Modified : 11/04/17 23:27
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
