@@ -24,7 +24,7 @@ import java.util.Observer;
  .
  . The GUIView	 Class was Coded by : Alexandre BOLOT
  .
- . Last Modified : 11/04/17 23:30
+ . Last Modified : 18/04/17 17:49
  .
  . Contact : bolotalex06@gmail.com
  ...............................................................................................................................*/
@@ -47,34 +47,20 @@ import java.util.Observer;
 public class GUIView implements Observer
 {
     //region //=========== FXML Controls ===========//
-    @FXML
-    private TreeView<String> treeView;
-    @FXML
-    private ListView<String> listView;
-    @FXML
-    private TextField        txtBusName;
-    @FXML
-    private TextField        txtBoxName;
-    @FXML
-    private TextField        txtMessageContent;
-    @FXML
-    private Button           btnLireMessages;
-    @FXML
-    private Button           btnCreerBus;
-    @FXML
-    private Button           btnEmettreMessage;
-    @FXML
-    private Button           btnCreerBoite;
-    @FXML
-    private Button           btnValider;
-    @FXML
-    private Label            lblFeedBack;
-    @FXML
-    private Label            lblBusName;
-    @FXML
-    private Label            lblBoxName;
-    @FXML
-    private Label            lblMessageContent;
+    public TreeView<String> treeView;
+    public ListView<String> listView;
+    public TextField        txtBusName;
+    public TextField        txtBoxName;
+    public TextField        txtMessageContent;
+    public Button           btnLireMessages;
+    public Button           btnCreerBus;
+    public Button           btnEmettreMessage;
+    public Button           btnCreerBoite;
+    public Button           btnValider;
+    public Label            lblFeedBack;
+    public Label            lblBusName;
+    public Label            lblBoxName;
+    public Label            lblMessageContent;
     
     //endregion
     
